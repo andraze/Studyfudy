@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choose_activity"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="comingSoon"
+        android:background="@android:color/transparent"/>
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pantry_btn"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:onClick="comingSoon"/>
+
+        <Button
+            android:onClick="toExchange"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/below_center_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/center_view"/>
+
+    <Button
+        android:id="@+id/pantry_btn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/below_center_view"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="130dp"
+        android:background="@android:color/transparent"
+        android:onClick="comingSoon" />
+
+</RelativeLayout>

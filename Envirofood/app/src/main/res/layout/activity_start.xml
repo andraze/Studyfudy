@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/logo_background"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/spark_button"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:sparkbutton_activeImage="@drawable/studyfudy_logo"
+        app:sparkbutton_animationSpeed="0.5"
+        app:sparkbutton_iconSize="150dp"
+        app:sparkbutton_inActiveImage="@drawable/studyfudy_logo"
+        app:sparkbutton_primaryColor="@color/orange_light"
+        app:sparkbutton_secondaryColor="@color/turkiz_light" />
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_view"
+        android:layout_marginTop="100dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Envirofood"
+        android:textColor="@color/turkiz_dark"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/brought_to_you_by"
+        android:textColor="@color/turkiz_dark"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
