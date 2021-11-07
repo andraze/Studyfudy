@@ -1,0 +1,14 @@
+// Styling for the download section
+section.contact {
+    color: #d1d1d1;
+    text-align: center;
+    background-color: #2c6148;
+    h2 {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 25px;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+}
